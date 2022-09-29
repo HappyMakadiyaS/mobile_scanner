@@ -134,8 +134,13 @@ class MobileScannerWebPlugin {
 
       // required to tell iOS safari we don't want fullscreen
       video.setAttribute('playsinline', 'true');
+      // video.muted = true;
 
+
+
+      // video.pause();
       await video.play();
+      // Future.delayed(const Duration(seconds: 1), () async => video.play());
 
       // Then capture a frame to be analyzed every 200 miliseconds
       _frameInterval =
